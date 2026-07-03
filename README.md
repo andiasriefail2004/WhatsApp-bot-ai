@@ -103,7 +103,7 @@ pip install yt-dlp spotdl
 
 ```bash
 # Kalau clone dari GitHub
-git clone https://github.com/username-kamu/nama-repo-bot.git
+git clone https://github.com/andiasriefail2004/WhatsApp-bot-ai.git
 cd nama-repo-bot
 
 # Atau buat folder secara manual
