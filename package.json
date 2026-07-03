@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-bot-ai",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp yang powerful dan kaya fitur, dibangun dengan Baileys dan dukungan multi-provider AI.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "login": "node register-wa.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc13",
+    "node-cron": "^3.0.3",
+    "qrcode-terminal": "^0.12.0",
+    "qrcode": "^1.5.4",
+    "jsqr": "^1.4.0",
+    "jimp": "^1.6.1"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.35.0"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andiasriefail2004/WhatsApp-bot-ai.git"
+  }
+}
