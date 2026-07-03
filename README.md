@@ -1,6 +1,6 @@
 # 🤖 WhatsApp AI Bot INDONESIA 
 
-Bot WhatsApp yang powerful dan kaya fitur, dibangun dengan **Baileys** dan dukungan multi-provider AI. Mendukung manajemen grup, download media, info gempa/cuaca, chat AI, generate gambar, dan masih banyak lagi, Tersedia Versi Bahasa Inggris Di : 
+Bot WhatsApp yang powerful dan kaya fitur, dibangun dengan **Baileys** dan dukungan multi-provider AI. Mendukung manajemen grup, download media, info gempa/cuaca, chat AI, generate gambar, dan masih banyak lagi, Tersedia Versi Bahasa Inggris Di : https://github.com/andiasriefail2004/WhatsApp-bot-ai-english
 
 ---
 
