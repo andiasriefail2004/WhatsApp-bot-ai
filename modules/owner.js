@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const OWNER_NUMBERS = ['6285333332505']
+const OWNER_NUMBERS = ['62123456789']
 
 const OWNER_COMMANDS = ['broadcast', 'groupbroadcast', 'send', 'stats', 'ban', 'unban', 'status', 'dstatus', 'bio', 'pp', 'creategroup', 'joingroup', 'leavegroup', 'setbio', 'setbotname', 'block', 'unblock', 'businessinfo', 'maintenance', 'listgroups', 'leaveall', 'leaveinactive', 'addme']
 
