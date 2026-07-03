@@ -51,13 +51,24 @@ async function connectToWA(usePairingCode, phoneNumber) {
 
         if (connection === 'close') {
             const code = lastDisconnect?.error?.output?.statusCode
+
             if (code === DisconnectReason.loggedOut) {
                 console.log('❌ Logout. Hapus folder auth dan jalankan ulang.')
-            } else {
-                console.log('❌ Koneksi terputus. Jalankan ulang register.js')
+                rl.close()
+                process.exit(1)
             }
-            rl.close()
-            process.exit(1)
+
+            // 515 = "restart required" — ini NORMAL setelah pairing/scan QR berhasil.
+            // WhatsApp minta client reconnect pakai credentials yang baru saja tersimpan.
+            // Auto-reconnect di sini supaya user tidak perlu jalankan ulang script ini manual.
+            if (code === DisconnectReason.restartRequired) {
+                console.log('🔄 Pairing terkonfirmasi, menyambung ulang otomatis...')
+                await connectToWA(usePairingCode, phoneNumber)
+                return
+            }
+
+            console.log(`❌ Koneksi terputus (kode ${code}). Menyambung ulang...`)
+            await connectToWA(usePairingCode, phoneNumber)
         }
 
         if (connection === 'open') {
