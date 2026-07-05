@@ -540,5 +540,4 @@ Pull request dan issue report sangat diterima. Untuk perubahan besar, buka issue
 
 ## 📄 Lisensi
 
-Tambahkan informasi lisensi kamu di sini.
-
+MIT
